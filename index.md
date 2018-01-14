@@ -8,5 +8,7 @@
 layout: home
 ---
 
-This blog is still under development.  I don't have anything in here but sample posts. Check it out at a later time!
+This is a tech blog. Nevertheless, I may put up random stuff in here whenever I feel like it.
+
+This blog is still under development. I don’t have anything in here but sample posts. Check it out at a later time!
 
