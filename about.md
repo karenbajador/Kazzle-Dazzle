@@ -11,7 +11,7 @@ I have vast experience in working on projects related to web development, data e
 
 I put up this blog to write about my journey in learning new things in the realm of technology. I am excited to share about my learning process and challenges in getting stuff done, and probably my insights on random subject of interests.
 
-This project is open-source. Click any of the links above to check out the source code.
+This project is open-source and hosted in Github. Click any of the links above to check out the source code.
 
 
 [Go to the Home Page]({{ site.url }}{{ site.base_url }})
