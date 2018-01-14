@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://jekyllrb.com/docs/usage/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="generator" content="Jekyll v3.6.2">
+  <link type="application/atom+xml" rel="alternate" href="https://jekyllrb.com/feed.xml" title="jekyll">
+  <link rel="alternate" type="application/atom+xml" title="Recent commits to Jekyll’s master branch" href="https://github.com/jekyll/jekyll/commits/master.atom">
+  <link rel="stylesheet" href="./Basic Usage _ jekyll_files/css">
+  <link rel="stylesheet" href="./Basic Usage _ jekyll_files/docsearch.min.css">
+  <link rel="stylesheet" href="./Basic Usage _ jekyll_files/screen.css">
+  <link rel="icon" type="image/x-icon" href="https://jekyllrb.com/favicon.ico">
+  <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Basic Usage | jekyll</title>
+<meta property="og:title" content="Basic Usage">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="The Jekyll gem makes a jekyll executable available to you in your Terminal window. You can use this command in a number of ways:">
+<meta property="og:description" content="The Jekyll gem makes a jekyll executable available to you in your Terminal window. You can use this command in a number of ways:">
+<link rel="canonical" href="https://jekyllrb.com/docs/usage/">
+<meta property="og:url" content="https://jekyllrb.com/docs/usage/">
+<meta property="og:site_name" content="jekyll">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@jekyllrb">
+<meta name="google-site-verification" content="onQcXpAvtHBrUI5LlroHNE_FP0b2qvFyPq7VZw36iEY">
+<script src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" id="gauges-tracker" data-site-id="503c5af6613f5d0f19000027" src="https://secure.gaug.es/track.js"></script><script type="application/ld+json">
+{"name":null,"description":"The Jekyll gem makes a jekyll executable available to you in your Terminal window. You can use this command in a number of ways:","author":null,"@type":"WebPage","url":"https://jekyllrb.com/docs/usage/","image":null,"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://jekyllrb.com/img/logo-2x.png"}},"headline":"Basic Usage","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <!--[if lt IE 9]>
+  <script src="/js/html5shiv.min.js"></script>
+  <script src="/js/respond.min.js"></script>
+  <![endif]-->
+<style></style><style></style></head>
+
+
+<body class="wrap">
+  <header>
+  <div class="flexbox">
+    <div class="center-on-mobiles">
+      <h1>
+        <a href="https://jekyllrb.com/" class="logo">
+          <span class="sr-only">Jekyll</span>
+          <img src="./Basic Usage _ jekyll_files/logo-2x.png" width="140" height="65" alt="Jekyll Logo">
+        </a>
+      </h1>
+    </div>
+    <nav class="main-nav hide-on-mobiles">
+      <ul>
+  <li class="">
+    <a href="https://jekyllrb.com/">Home</a>
+  </li>
+  <li class="current">
+    <a href="https://jekyllrb.com/docs/home/">Docs</a>
+  </li>
+  <li class="">
+    <a href="https://jekyllrb.com/news/">News</a>
+  </li>
+  <li class="">
+    <a href="https://jekyllrb.com/help/">Help</a>
+  </li>
+</ul>
+
+    </nav>
+    <div class="search hide-on-mobiles">
+      
+  <form novalidate="novalidate" onsubmit="return false;" class="searchbox">
+    <div role="search" class="searchbox__wrapper">
+      <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input id="docsearch" type="search" name="search" placeholder="Search the docs" autocomplete="off" required="required" class="searchbox__input ds-input" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: sans-serif; font-size: 15.75px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+      <button type="submit" title="Submit your search query." class="searchbox__submit">
+        <svg width="12" height="12" role="img" aria-label="Search">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-13"></use>
+        </svg>
+      </button>
+      <button type="reset" title="Clear the search query." class="searchbox__reset hide">
+        <svg width="12" height="12" role="img" aria-label="Reset">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+        </svg>
+      </button>
+    </div>
+</form>
+
+<div class="svg-icons" style="height: 0; width: 0; position: absolute; visibility: hidden">
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="sbx-icon-clear-3" viewBox="0 0 40 40"><path d="M16.228 20L1.886 5.657 0 3.772 3.772 0l1.885 1.886L20 16.228 34.343 1.886 36.228 0 40 3.772l-1.886 1.885L23.772 20l14.342 14.343L40 36.228 36.228 40l-1.885-1.886L20 23.772 5.657 38.114 3.772 40 0 36.228l1.886-1.885L16.228 20z" fill-rule="evenodd"></path></symbol>
+    <symbol id="sbx-icon-search-13" viewBox="0 0 40 40"><path d="M26.806 29.012a16.312 16.312 0 0 1-10.427 3.746C7.332 32.758 0 25.425 0 16.378 0 7.334 7.333 0 16.38 0c9.045 0 16.378 7.333 16.378 16.38 0 3.96-1.406 7.593-3.746 10.426L39.547 37.34c.607.608.61 1.59-.004 2.203a1.56 1.56 0 0 1-2.202.004L26.807 29.012zm-10.427.627c7.322 0 13.26-5.938 13.26-13.26 0-7.324-5.938-13.26-13.26-13.26-7.324 0-13.26 5.936-13.26 13.26 0 7.322 5.936 13.26 13.26 13.26z" fill-rule="evenodd"></path></symbol>
+  </svg>
+</div>
+  
+
+    </div>
+    <div class="meta hide-on-mobiles">
+      <ul>
+        <li>
+          <a href="https://github.com/jekyll/jekyll/releases/tag/v3.7.0">v3.7.0</a>
+        </li>
+        <li>
+          <a href="https://github.com/jekyll/jekyll">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav class="mobile-nav show-on-mobiles">
+    <ul>
+  <li class="">
+    <a href="https://jekyllrb.com/">Home</a>
+  </li>
+  <li class="current">
+    <a href="https://jekyllrb.com/docs/home/">Docs</a>
+  </li>
+  <li class="">
+    <a href="https://jekyllrb.com/news/">News</a>
+  </li>
+  <li class="">
+    <a href="https://jekyllrb.com/help/">Help</a>
+  </li>
+  <li>
+    <a href="https://github.com/jekyll/jekyll">GitHub</a>
+  </li>
+</ul>
+
+  </nav>
+</header>
+
+
+    <section class="docs">
+    <div class="grid">
+
+      <div class="docs-nav-mobile unit whole show-on-mobiles">
+  <select onchange="if (this.value) window.location.href=this.value">
+    <option value="">Navigate the docs…</option>
+    
+    <optgroup label="Getting Started">
+      
+  
+  
+  <option value="/docs/home/">Welcome</option>
+
+  
+  
+  <option value="/docs/quickstart/">Quick-start guide</option>
+
+  
+  
+  <option value="/docs/installation/">Installation</option>
+
+  
+  
+  <option value="/docs/windows/">Jekyll on Windows</option>
+
+  
+  
+  <option value="/docs/usage/">Basic Usage</option>
+
+  
+  
+  <option value="/docs/structure/">Directory structure</option>
+
+  
+  
+  <option value="/docs/configuration/">Configuration</option>
+
+
+    </optgroup>
+    
+    <optgroup label="Your Content">
+      
+  
+  
+  <option value="/docs/frontmatter/">Front Matter</option>
+
+  
+  
+  <option value="/docs/posts/">Writing posts</option>
+
+  
+  
+  <option value="/docs/drafts/">Working with drafts</option>
+
+  
+  
+  <option value="/docs/pages/">Creating pages</option>
+
+  
+  
+  <option value="/docs/static-files/">Static Files</option>
+
+  
+  
+  <option value="/docs/variables/">Variables</option>
+
+  
+  
+  <option value="/docs/collections/">Collections</option>
+
+  
+  
+  <option value="/docs/datafiles/">Data Files</option>
+
+  
+  
+  <option value="/docs/assets/">Assets</option>
+
+  
+  
+  <option value="/docs/migrations/">Blog migrations</option>
+
+
+    </optgroup>
+    
+    <optgroup label="Customization">
+      
+  
+  
+  <option value="/docs/templates/">Templates</option>
+
+  
+  
+  <option value="/docs/includes/">Includes</option>
+
+  
+  
+  <option value="/docs/permalinks/">Permalinks</option>
+
+  
+  
+  <option value="/docs/pagination/">Pagination</option>
+
+  
+  
+  <option value="/docs/plugins/">Plugins</option>
+
+  
+  
+  <option value="/docs/themes/">Themes</option>
+
+  
+  
+  <option value="/docs/extras/">Extras</option>
+
+
+    </optgroup>
+    
+    <optgroup label="Deployment">
+      
+  
+  
+  <option value="/docs/github-pages/">GitHub Pages</option>
+
+  
+  
+  <option value="/docs/deployment-methods/">Deployment methods</option>
+
+  
+  
+  <option value="/docs/continuous-integration/">Continuous Integration</option>
+
+
+    </optgroup>
+    
+    <optgroup label="Miscellaneous">
+      
+  
+  
+  <option value="/docs/troubleshooting/">Troubleshooting</option>
+
+  
+  
+  <option value="/docs/sites/">Sites using Jekyll</option>
+
+  
+  
+  <option value="/docs/resources/">Resources</option>
+
+  
+  
+  <option value="/docs/upgrading/0-to-2/">Upgrading from 0.x to 2.x</option>
+
+  
+  
+  <option value="/docs/upgrading/2-to-3/">Upgrading from 2.x to 3.x</option>
+
+
+    </optgroup>
+    
+    <optgroup label="Meta">
+      
+  
+  
+  <option value="/docs/contributing/">Contributing</option>
+
+  
+  
+  <option value="/docs/maintaining/">Maintaining Jekyll</option>
+
+  
+  
+  <option value="/docs/conduct/">Code of Conduct</option>
+
+  
+  
+  <option value="/docs/history/">History</option>
+
+
+    </optgroup>
+    
+  </select>
+</div>
+
+
+      <div class="unit four-fifths">
+        <article>
+          <div class="improve right hide-on-mobiles">
+            <a href="https://github.com/jekyll/jekyll/edit/master/docs/_docs/usage.md"><i class="fa fa-pencil"></i> &nbsp;Improve this page</a>
+          </div>
+          <h1>Basic Usage</h1>
+          <p>The Jekyll gem makes a <code class="highlighter-rouge">jekyll</code> executable available to you in your Terminal
+window. You can use this command in a number of ways:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll build
+<span class="c"># =&gt; The current folder will be generated into ./_site</span>
+
+jekyll build <span class="nt">--destination</span> &lt;destination&gt;
+<span class="c"># =&gt; The current folder will be generated into &lt;destination&gt;</span>
+
+jekyll build <span class="nt">--source</span> &lt;<span class="nb">source</span><span class="o">&gt;</span> <span class="nt">--destination</span> &lt;destination&gt;
+<span class="c"># =&gt; The &lt;source&gt; folder will be generated into &lt;destination&gt;</span>
+
+jekyll build <span class="nt">--watch</span>
+<span class="c"># =&gt; The current folder will be generated into ./_site,</span>
+<span class="c">#    watched for changes, and regenerated automatically.</span>
+</code></pre></div></div>
+
+<h2 id="override-default-development-settings">Override default development settings<a class="header-link" href="https://jekyllrb.com/docs/usage/#override-default-development-settings" title="Permalink"><span class="sr-only">Permalink</span><i class="fa fa-link"></i></a></h2>
+
+<p>Default URL is set to <code class="highlighter-rouge">http://localhost:4000</code> in development environment. <span class="version-badge" title="This feature is available starting version 3.3.0">3.3.0</span></p>
+
+<p>If you want to build for your production environment:</p>
+
+<ul>
+  <li>Set your production URL in <code class="highlighter-rouge">_config.yml</code> e.g. <code class="highlighter-rouge">url: https://example.com</code>.</li>
+  <li>Run <code class="highlighter-rouge">JEKYLL_ENV=production bundle exec jekyll build</code>.</li>
+</ul>
+
+<div class="note info">
+  <h5>Changes to <code>_config.yml</code> are not included during automatic regeneration.</h5>
+  <p>
+    The <code>_config.yml</code> master configuration file contains global configurations
+    and variable definitions that are read once at execution time. Changes made to <code>_config.yml</code>
+    during automatic regeneration are not loaded until the next execution.
+  </p>
+  <p>
+    Note <a href="https://jekyllrb.com/docs/datafiles">Data Files</a> are included and reloaded during automatic regeneration.
+  </p>
+</div>
+
+<div class="note warning">
+  <h5>Destination folders are cleaned on site builds</h5>
+  <p>
+    The contents of <code>&lt;destination&gt;</code> are automatically
+    cleaned, by default, when the site is built. Files or folders that are not
+    created by your site will be removed. Files and folders you wish to retain
+    in <code>&lt;destination&gt;</code> may be specified within the <code>&lt;keep_files&gt;</code>
+    configuration directive.
+  </p>
+  <p>
+    Do not use an important location for <code>&lt;destination&gt;</code>;
+    instead, use it as a staging area and copy files from there to your web server.
+  </p>
+</div>
+
+<p>Jekyll also comes with a built-in development server that will allow you to
+preview what the generated site will look like in your browser locally.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll serve
+<span class="c"># =&gt; A development server will run at http://localhost:4000/</span>
+<span class="c"># Auto-regeneration: enabled. Use `--no-watch` to disable.</span>
+
+jekyll serve <span class="nt">--livereload</span>
+<span class="c"># LiveReload refreshes your browser after a change.</span>
+
+jekyll serve <span class="nt">--incremental</span>
+<span class="c"># Incremental will perform a partial build in order to reduce regeneration time.</span>
+
+jekyll serve <span class="nt">--detach</span>
+<span class="c"># =&gt; Same as `jekyll serve` but will detach from the current terminal.</span>
+<span class="c">#    If you need to kill the server, you can `kill -9 1234` where "1234" is the PID.</span>
+<span class="c">#    If you cannot find the PID, then do, `ps aux | grep jekyll` and kill the instance.</span>
+</code></pre></div></div>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll serve <span class="nt">--no-watch</span>
+<span class="c"># =&gt; Same as `jekyll serve` but will not watch for changes.</span>
+</code></pre></div></div>
+
+<p>These are just a few of the available <a href="https://jekyllrb.com/docs/configuration/">configuration options</a>.
+Many configuration options can either be specified as flags on the command line,
+or alternatively (and more commonly) they can be specified in a <code class="highlighter-rouge">_config.yml</code>
+file at the root of the source directory. Jekyll will automatically use the
+options from this file when run. For example, if you place the following lines
+in your <code class="highlighter-rouge">_config.yml</code> file:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">source</span><span class="pi">:</span>      <span class="s">_source</span>
+<span class="na">destination</span><span class="pi">:</span> <span class="s">_deploy</span>
+</code></pre></div></div>
+
+<p>Then the following two commands will be equivalent:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll build
+jekyll build <span class="nt">--source</span> _source <span class="nt">--destination</span> _deploy
+</code></pre></div></div>
+
+<p>For more about the possible configuration options, see the
+<a href="https://jekyllrb.com/docs/configuration/">configuration</a> page.</p>
+
+<div class="note info">
+  <h5>Call for help</h5>
+  <p>
+    The <code>help</code> command is always here to remind you of all available options and usage, and also works with the <code>build</code>, <code>serve</code> and <code>new</code> subcommands, e.g <code>jekyll help new</code> or <code>jekyll help build</code>.
+  </p>
+</div>
+
+<p>If you’re interested in browsing these docs on-the-go, install the
+<code class="highlighter-rouge">jekyll-docs</code> gem and run <code class="highlighter-rouge">jekyll docs</code> in your terminal.</p>
+
+          
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="section-nav">
+      <div class="left align-right">
+          
+            
+            
+            <a href="https://jekyllrb.com/docs/windows/" class="prev">Back</a>
+          
+      </div>
+      <div class="right align-left">
+          
+            
+            
+            <a href="https://jekyllrb.com/docs/structure/" class="next">Next</a>
+          
+      </div>
+    </div>
+    <div class="clear"></div>
+    
+        </article>
+      </div>
+
+      <div class="unit one-fifth hide-on-mobiles">
+  <aside>
+    
+    <h4>Getting Started</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/home/">Welcome</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/quickstart/">Quick-start guide</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/installation/">Installation</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/windows/">Jekyll on Windows</a></li>
+
+  
+  
+  <li class="current"><a href="https://jekyllrb.com/docs/usage/">Basic Usage</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/structure/">Directory structure</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/configuration/">Configuration</a></li>
+
+</ul>
+
+    
+    <h4>Your Content</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/frontmatter/">Front Matter</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/posts/">Writing posts</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/drafts/">Working with drafts</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/pages/">Creating pages</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/static-files/">Static Files</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/variables/">Variables</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/collections/">Collections</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/datafiles/">Data Files</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/assets/">Assets</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/migrations/">Blog migrations</a></li>
+
+</ul>
+
+    
+    <h4>Customization</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/templates/">Templates</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/includes/">Includes</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/permalinks/">Permalinks</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/pagination/">Pagination</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/plugins/">Plugins</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/themes/">Themes</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/extras/">Extras</a></li>
+
+</ul>
+
+    
+    <h4>Deployment</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/github-pages/">GitHub Pages</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/deployment-methods/">Deployment methods</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/continuous-integration/">Continuous Integration</a></li>
+
+</ul>
+
+    
+    <h4>Miscellaneous</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/troubleshooting/">Troubleshooting</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/sites/">Sites using Jekyll</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/resources/">Resources</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/upgrading/0-to-2/">Upgrading from 0.x to 2.x</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/upgrading/2-to-3/">Upgrading from 2.x to 3.x</a></li>
+
+</ul>
+
+    
+    <h4>Meta</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/contributing/">Contributing</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/maintaining/">Maintaining Jekyll</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/conduct/">Code of Conduct</a></li>
+
+  
+  
+  <li class=""><a href="https://jekyllrb.com/docs/history/">History</a></li>
+
+</ul>
+
+    
+  </aside>
+</div>
+
+
+      <div class="clear"></div>
+
+    </div>
+  </section>
+
+
+  <footer>
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <p>The contents of this website are <br>©&nbsp;2018 under the terms of the <a href="https://github.com/jekyll/jekyll/blob/master/LICENSE">MIT&nbsp;License</a>.</p>
+    </div>
+    <div class="unit two-thirds align-right center-on-mobiles">
+      <p>
+        Proudly hosted by
+        <a href="https://github.com/">
+          <img src="./Basic Usage _ jekyll_files/footer-logo.png" width="100" height="30" alt="GitHub • Social coding">
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+  <script>
+  var anchorForId = function (id) {
+    var anchor = document.createElement("a");
+    anchor.className = "header-link";
+    anchor.href      = "#" + id;
+    anchor.innerHTML = "<span class=\"sr-only\">Permalink</span><i class=\"fa fa-link\"></i>";
+    anchor.title = "Permalink";
+    return anchor;
+  };
+
+  var linkifyAnchors = function (level, containingElement) {
+    var headers = containingElement.getElementsByTagName("h" + level);
+    for (var h = 0; h < headers.length; h++) {
+      var header = headers[h];
+
+      if (typeof header.id !== "undefined" && header.id !== "") {
+        header.appendChild(anchorForId(header.id));
+      }
+    }
+  };
+
+  document.onreadystatechange = function () {
+    if (this.readyState === "complete") {
+      var contentBlock = document.getElementsByClassName("docs")[0] || document.getElementsByClassName("news")[0];
+      if (!contentBlock) {
+        return;
+      }
+      for (var level = 1; level <= 6; level++) {
+        linkifyAnchors(level, contentBlock);
+      }
+    }
+  };
+</script>
+
+  
+  <!-- Gauges (http://get.gaug.es/) -->
+  <script>
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '503c5af6613f5d0f19000027');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+
+
+
+  <!-- Google Analytics (https://www.google.com/analytics) -->
+  <script>
+    !function(j,e,k,y,l,L){j.GoogleAnalyticsObject=y,j[y]||(j[y]=function(){
+    (j[y].q=j[y].q||[]).push(arguments)}),j[y].l=+new Date,l=e.createElement(k),
+    L=e.getElementsByTagName(k)[0],l.src='//www.google-analytics.com/analytics.js',
+    L.parentNode.insertBefore(l,L)}(window,document,'script','ga');
+
+    ga('create', 'UA-50755011-1', 'jekyllrb.com');
+    ga('send', 'pageview');
+
+  </script>
+
+
+  <script type="text/javascript" src="./Basic Usage _ jekyll_files/docsearch.min.js"></script>
+<script type="text/javascript"> docsearch({
+apiKey: '50fe39c839958dfad797000f33e2ec17',
+indexName: 'jekyllrb',
+inputSelector: '#docsearch-input',
+enhancedSearchInput: true,
+debug: false // Set debug to true if you want to inspect the dropdown
+});
+</script>
+
+
+
+</body></html>
