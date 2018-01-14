@@ -2,10 +2,10 @@ title: Kazzle Dazzle
 description: Yet another bedazzling blog of mine.
 show_downloads: true
 
-baseurl: "/" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+baseurl:  # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
 url: "kazzle-dazzle.com.au" # change this to the base hostname & protocol for your site
 
-google_analytics: UA-112460560-1
+google_analytics: UA-112389536-1 #dev
 # kazzle-dazzle date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 kazzle-dazzle:
