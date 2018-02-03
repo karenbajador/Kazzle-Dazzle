@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Example content"
+title: "Why I want to become a tech blogger"
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
