@@ -3,7 +3,7 @@ layout: post
 title: "Why I want to be a Tech blogger"
 ---
 
-I have had many blogs in the past. I put up my first blog way back 2010 when a peculiar epiphany about life after death dawned on me when I was in the middle of my favorite hobby - day dreaming. Unfortunately, I am the best example of _“Ningas-Kugon”_. It is a Tagalog term to describe an attitude of a person who builds up great enthusiasm at the beginning of the project but the fire just doesn’t last long enough to finish the task or sustain the activity. I managed to start several blogs that served as my avenue to share my creative works like poems, lyrics and very few articles about stuffs that interest me but failed to keep the ball rolling for each and every single one of them.
+I have had many blogs. I put up my first blog way back 2010 when a peculiar epiphany about life after death dawned on me when I was in the middle of my favorite hobby - day dreaming. Unfortunately, I am the best example of _“Ningas-Kugon”_. It is a Tagalog term to describe an attitude of a person who builds up great enthusiasm at the beginning of the project but the fire just doesn’t last long enough to finish the task or sustain the activity. I managed to start several blogs that served as my avenue to share my creative works like poems, lyrics and very few articles about stuffs that interest me but failed to keep the ball rolling for each and every single one of them.
 
 Now I find myself having the same old urge. I am overflowing with eagerness and equipped with a strong determination to be a successful blogger. 
 
@@ -30,10 +30,10 @@ Occasionally, I just feel the urge to get something out of my chest. It can be a
 ## [](#header-2)The plan.
 
 ### [](#header-3)Develop a habit
-One develops a habit if it is done consistently. I plan to deliver the same amount of output in a given timeframe. My goal is to publish 1 post every fortnight.
+One develops a habit if it is done consistently. I plan to deliver the same amount of output in a given timeframe. My goal is to publish atleast 1 post every fortnight.
 
 ### [](#header-3)Commit to a schedule
-I will allot my weekends (Friday-Sunday) to my blog works. I can flexibly work any time during those days as long as I conclude something to publish on Monday morning every fortnight.
+I will allot my weekends (Friday-Sunday) to my blog works. I can flexibly work any time during those days as long as I conclude something to publish on Monday morning every fortnight. Adhering to such commitment will help me keep my learning pace and enthusiasm in building projects just so I can provide content to my blog.
 
 
 <br/><br/><br/>
