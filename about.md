@@ -14,4 +14,4 @@ I put up this blog to write about my journey in learning new things in the realm
 This project is open-source and hosted in Github. Click any of the links above to check out the source code.
 
 
-[Go to the Home Page]({{ site.baseurl | prepend: site.url }})
+[Go to the Home Page]({{ site.url }})
